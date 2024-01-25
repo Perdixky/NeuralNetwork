@@ -62,10 +62,14 @@ $$a_i=\frac{e^{z_i}}{\sum_{t}{z_t}}=\frac{e^{z_i}}{sum}$$
 $$\left.\frac{\partial a_i}{\partial z_j}=\left\{\begin{array}{rc}-a_i^2+a_i,&i=j\\-a_ia_j,&i\neq j\end{array}\right.\right. \tag{14}
 $$
 #### 结合独热编码交叉熵的导数
+
 $$
--\ln a_k \nabla_z a_k \tag{15}
+-\ln a_k\nabla_z a_k\tag{15}
 $$
-其中$k$为标签
+
+其中
+$k$
+为标签
 ### 3.he初始化方法
 $$
 w\sim N(0,\sigma^{2})\\
