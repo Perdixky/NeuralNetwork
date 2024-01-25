@@ -50,13 +50,18 @@ $$
 (a,b)^2 \leq (a,a)(b,b) \tag{12}
 $$
 ### 2.SoftMax激活函数
-$$D=max(z)\\
+
 $$
+D=max(z)\\
+$$
+
 $$
 \begin{aligned}
 &softmax(z_i)\\
 &=\frac{e^{z_i}}{\sum_{c}e^{z_c}}\\
-&=\frac{e^{z_i-D}}{\sum_{c}e^{z_c-D}}\end{aligned}\tag{13}$$ 
+&=\frac{e^{z_i-D}}{\sum_{c}e^{z_c-D}}\end{aligned}\tag{13}
+$$ 
+
 #### 其偏导数为
 $$a_i=\frac{e^{z_i}}{\sum_{t}{z_t}}=\frac{e^{z_i}}{sum}$$
 $$\left.\frac{\partial a_i}{\partial z_j}=\left\{\begin{array}{rc}-a_i^2+a_i,&i=j\\-a_ia_j,&i\neq j\end{array}\right.\right. \tag{14}
