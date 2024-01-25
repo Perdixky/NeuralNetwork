@@ -63,11 +63,12 @@ $$\left.\frac{\partial a_i}{\partial z_j}=\left\{\begin{array}{rc}-a_i^2+a_i,&i=
 $$
 #### 结合独热编码交叉熵的导数
 $$
--\ln a_k\nabla_z a_k\tag{15}
+-\ln a_k \nabla_z a_k \tag{15}
 $$
 其中$k$为标签
 ### 3.he初始化方法
-$$w\sim N(0,\sigma^{2})\\
+$$
+w\sim N(0,\sigma^{2})\\
 \sigma = \sqrt{\frac2{a^{l}}} 
 \tag{16} 
 $$ 
